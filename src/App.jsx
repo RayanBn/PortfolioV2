@@ -7,7 +7,7 @@ import config from "./config";
 
 function App() {
   return (
-    <Canvas shadows camera={{ position: [0, 1, 8], fov: 30 }}>
+    <Canvas shadows camera={{ position: [0, 1, 7], fov: 50 }}>
       <color attach="background" args={["#ececec"]} />
       <fog attach="fog" args={["#ececec", 20, 100]} />
       <ScrollControls

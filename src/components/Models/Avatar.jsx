@@ -27,7 +27,7 @@ const Avatar = (props) => {
 
     useFrame(() => {
         const scrollDelta = scrollData.offset - lastScroll.current;
-        let rotationTarget = Math.PI / 7;
+        let rotationTarget = Math.PI / 6;
         if (Math.abs(scrollDelta) > 0.00001) {
             setAnimation("Walking");
             if (scrollDelta > 0) {
