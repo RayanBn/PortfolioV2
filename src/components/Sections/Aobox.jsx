@@ -1,6 +1,6 @@
 import { Environment } from "@react-three/drei"
 
-const Aobox = ({ children, ...props }) => {
+const Aobox = ({ children, color, ...props }) => {
     return (
         <group {...props}>
             <Environment preset="city" />
@@ -17,15 +17,17 @@ const Aobox = ({ children, ...props }) => {
 
             {children}
 
+            {/* FORWARD */}
             <mesh
                 castShadow
                 receiveShadow
                 position={[0, 0, -5]}
             >
                 <planeGeometry args={[5, 5]} />
-                <meshStandardMaterial color="white" />
+                <meshStandardMaterial color={color} />
             </mesh>
 
+            {/* BOTTOM */}
             <mesh
                 castShadow
                 receiveShadow
@@ -33,8 +35,9 @@ const Aobox = ({ children, ...props }) => {
                 position={[0, -1.5, 0]}
             >
                 <planeGeometry args={[5, 10]} />
-                <meshStandardMaterial color="white" />
+                <meshStandardMaterial color={color} />
             </mesh>
+            {/* TOP */}
             <mesh
                 castShadow
                 receiveShadow
@@ -42,9 +45,10 @@ const Aobox = ({ children, ...props }) => {
                 position={[0, 1.5, 0]}
             >
                 <planeGeometry args={[5, 10]} />
-                <meshStandardMaterial color="white" />
+                <meshStandardMaterial color={color} />
             </mesh>
 
+            {/* LEFT */}
             <mesh
                 castShadow
                 receiveShadow
@@ -52,8 +56,9 @@ const Aobox = ({ children, ...props }) => {
                 position={[-2.5, 0, 0]}
             >
                 <planeGeometry args={[10, 5]} />
-                <meshStandardMaterial color="white" />
+                <meshStandardMaterial color={color} />
             </mesh>
+            {/* RIGHT */}
             <mesh
                 castShadow
                 receiveShadow
@@ -61,7 +66,7 @@ const Aobox = ({ children, ...props }) => {
                 position={[2.5, 0, 0]}
             >
                 <planeGeometry args={[10, 5]} />
-                <meshStandardMaterial color="white" />
+                <meshStandardMaterial color={color} />
             </mesh>
         </group>
     )

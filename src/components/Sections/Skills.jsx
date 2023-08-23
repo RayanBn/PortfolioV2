@@ -15,7 +15,9 @@ const Skills = ({width, height, ...props}) => {
                         <Environment preset="city" />
                         <ambientLight intensity={0.2} />
 
-                        <Aobox>
+                        <Aobox
+                            color="purple"
+                        >
                             <SectionTitle
                                 castShadow
                                 receiveShadow

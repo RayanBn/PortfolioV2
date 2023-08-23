@@ -15,7 +15,9 @@ const Contact = ({width, height, ...props}) => {
                         <Environment preset="city" />
                         <ambientLight intensity={0.2} />
 
-                        <Aobox>
+                        <Aobox
+                            color="yellow"
+                        >
                             <SectionTitle
                                 castShadow
                                 receiveShadow
