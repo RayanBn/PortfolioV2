@@ -1,8 +1,8 @@
 const config = {
     sections: ["home", "skills", "projects", "contact"],
     home: {
-        title: "YOUR",
-        subtitle: "NAME",
+        title: "Rayan",
+        subtitle: "Banni",
     },
     contact: {
         mail: "bannirayan@gmail.com",
